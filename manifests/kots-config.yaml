@@ -12,7 +12,9 @@ spec:
       title: Name
       type: text
       value: ""
+      default: "default: please change this value"
     - name: github_url
       title: GitHub
       type: text
       value: ""
+      default: "default: please change this value"
