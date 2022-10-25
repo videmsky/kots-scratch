@@ -6,35 +6,13 @@ metadata:
 spec:
   groups:
   - name: example_settings
-    title: My Example Config
-    description: Configuration to serve as an example for creating your own. See [https://kots.io/reference/v1beta1/config/](https://kots.io/reference/v1beta1/config/) for configuration docs. In this case, we provide example fields for configuring an Nginx welcome page.
+    title: laci's custom values
     items:
-    - name: show_text_inputs
-      title: Customize Text Inputs
-      help_text: "Show custom user text inputs"
-      type: bool
-      default: "0"
-      recommended: true
-    - name: example_default_value
-      title: Text Example (with default value)
+    - name: name
+      title: Name
       type: text
       value: ""
-      default: please change this value
-      when: repl{{ ConfigOptionEquals "show_text_inputs" "1" }}
-    - name: api_token
-      title: API token
-      type: password
-      props:
-        rows: 5
-      when: repl{{ ConfigOptionEquals "show_text_inputs" "1" }}
-    - name: readonly_text_left
-      title: Readonly Text
+    - name: github_url
+      title: GitHub
       type: text
-      value: "{{repl RandomString 10}}"
-      readonly: true
-      when: repl{{ ConfigOptionEquals "show_text_inputs" "1" }}
-    - name: hidden_text
-      title: Secret Key
-      type: password
-      hidden: true
-      value: "{{repl RandomString 40}}"
+      value: ""

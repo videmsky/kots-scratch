@@ -13,10 +13,10 @@ data:
         <link href="styles.css" rel="stylesheet" type="text/css">
       </head>
       <body>
-        This is an example KOTS application.
-        <p>This is text from a user config value: '{{repl ConfigOption "example_default_value"}}' </p>
+        This is an example KOTS application packaged with Replicated
+        <p>Deployed By: '{{repl ConfigOption "name"}}' </p>
         </br>
-        This is a hidden value: '{{repl ConfigOption "hidden_text"}}'
+        <p>Manifests URL: '{{repl ConfigOption "github_url"}}' </p>
       </body>
     </html>
   styles.css: |
@@ -24,5 +24,6 @@ data:
       text-align: center;
       background-color: rgb(224,224,224);
       font-family: Verdana, Arial, Helvetica, sans-serif;
-      font-size: 100%;
+      font-size: 200%;
+      margin-top: 25%;
     }
