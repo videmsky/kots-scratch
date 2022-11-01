@@ -14,9 +14,9 @@ data:
       </head>
       <body>
         This is an example KOTS application packaged with Replicated
-        <p>Deployed By: '{{repl ConfigOption "name"}}' </p>
+        <p>Deployed By: {{repl ConfigOption "name"}} </p>
         </br>
-        <p>Manifests URL: '{{repl ConfigOption "github_url"}}' </p>
+        <p>Manifests URL: {{repl ConfigOption "github_url"}} </p>
       </body>
     </html>
   styles.css: |
